@@ -2,12 +2,14 @@
 // description: resonsive website portfolio
 //mit license
 // npm install node-sass
+@import "config";
+
+@import "menu";
 
 * {
   box-sizing: border-box;
 }
 
-@import "config";
 body {
   @include background;
   background: $primary-color;
