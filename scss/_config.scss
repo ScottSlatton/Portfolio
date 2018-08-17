@@ -1,5 +1,5 @@
 $primary-color: #444;
-$secondary-color: #21b6a9;
+$secondary-color: #3efcec;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.9;
@@ -28,6 +28,14 @@ $background-opacity: 0.9;
   }
 }
 
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
 // Media Query Mix-ins
 
 @mixin mediaSm {
