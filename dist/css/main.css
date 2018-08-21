@@ -56,7 +56,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(/dist/img/portrait2.lg.jpg);
+      background: url("/dist/img/portrait2.lg.jpg");
       border-radius: 50%;
       border: solid 3px #3efcec;
       opacity: 1; }
@@ -133,7 +133,7 @@ h3 {
     background: rgba(73, 73, 73, 0.5); }
 
 a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none; }
 
 header {
@@ -182,6 +182,12 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #3efcec 5px solid; }
+    .about-info .job a {
+      color: #3efcec;
+      text-decoration: underline; }
+      .about-info .job a:hover {
+        color: #fff;
+        transition: all 0.5s ease-out; }
 
 .projects {
   display: grid;
@@ -269,7 +275,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(/dist/img/portrait2.sm.jpg);
+      background: url(../dist/img/portrait2.sm.jpg);
       width: 150px;
       height: 150px;
       opacity: 1; }

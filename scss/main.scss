@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "pictures";
 
 * {
   box-sizing: border-box;
@@ -33,7 +34,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -105,6 +106,16 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+
+    a {
+      color: $secondary-color;
+      text-decoration: underline;
+
+      &:hover {
+        color: #fff;
+        @include easeOut;
+      }
+    }
   }
 }
 
