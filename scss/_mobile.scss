@@ -22,6 +22,7 @@
       line-height: 1;
       margin-bottom: 1rem;
     }
+
   }
 
   ul.menu-nav,
@@ -72,8 +73,13 @@
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
+    font-size: 4rem;
   }
+
   .projects {
     grid-template-columns: 1fr;
+  }
+  #pong {
+    display: none;
   }
 }
