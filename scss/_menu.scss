@@ -7,6 +7,7 @@
   top: 35px;
   cursor: pointer;
   @include easeOut;
+  text-align: start;
 
   .btn-line {
     width: 28px;
@@ -41,6 +42,8 @@
       }
     }
   }
+
+
 }
 
 .menu {

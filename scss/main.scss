@@ -189,6 +189,20 @@ main {
   color: #fff;
 }
 
+.menu-btn-text {
+  // @extend .btn;
+  position: absolute;
+  z-index: 3;
+  right: 30px;
+  top: 60px;
+  text-align: right;
+  color: set-text-color($primary-color);
+  
+}
+.heads-up{
+  text-align: center;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;

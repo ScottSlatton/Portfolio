@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="dist/css/main.css" rel="stylesheet" type="text/css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Unity WebGL Player | Pong</title>
+  <title>Pong</title>
+
   <link rel="shortcut icon" href="/PongGL/TemplateData/favicon.ico">
   <link rel="stylesheet" href="/PongGL/TemplateData/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link href="/dist/css/main.css" rel="stylesheet" type="text/css">
 
   <script src="/PongGL/TemplateData/UnityProgress.js"></script>
   <script src="/PongGL/Build/UnityLoader.js"></script>
@@ -18,18 +20,61 @@
   </script>
 </head>
 
-<body>
-  <main>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 1280px; height: 720px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Pong</div>
-        <div class="body">Press W and S to move</div>
-      </div>
+
+<body id="bg-img">
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
     </div>
-  </main>
-</body>
+    <div class="menu-btn-text">Menu</div>
+
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item current">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            About Me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link">
+            Portfolio
+          </a>
+        </li>
+        <li class="nav-item" id="pong">
+          <a href="./pong.html" class="nav-link">
+            Play Pong
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <main>
+      <div class="webgl-content">
+        <div id="unityContainer" style="width: 640px; height: 360px"></div>
+        <div class="footer">
+          <div class="webgl-logo"></div>
+          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+          <div class="title">Fullscreen</div>
+        </div>
+        <div class="body">
+          Press W and S to move. First to 5 wins.
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js "></script>
+  </body>
 
 </html>
