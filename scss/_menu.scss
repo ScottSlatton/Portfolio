@@ -24,7 +24,9 @@
 
   // Rotate into X with menu lines
   &.close {
-    transform: rotate(180deg);
+    transform: rotate(180deg) translate(0px, 5px);
+
+    
 
     .btn-line {
       // line 1 rotate

@@ -189,15 +189,17 @@ main {
   color: #fff;
 }
 
-.menu-btn-text {
-  // @extend .btn;
+.menu-btn-bg {
   position: absolute;
-  z-index: 3;
-  right: 30px;
-  top: 60px;
-  text-align: right;
-  color: set-text-color($primary-color);
-  
+  z-index: 1;
+  right: 24px;
+  top: 19px;
+  height: 50px;
+  width: 50px;
+  background: rgba(gray, $background-opacity);
+  border-radius: 50%;
+  display: inline-block;
+
 }
 .heads-up{
   text-align: center;

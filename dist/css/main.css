@@ -16,7 +16,7 @@
     .menu-btn .btn-line:nth-child(2) {
       background: #fff; }
   .menu-btn.close {
-    transform: rotate(180deg); }
+    transform: rotate(180deg) translate(0px, 5px); }
     .menu-btn.close .btn-line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
     .menu-btn.close .btn-line:nth-child(2) {
@@ -259,13 +259,16 @@ main {
   background: black;
   color: #fff; }
 
-.menu-btn-text {
+.menu-btn-bg {
   position: absolute;
-  z-index: 3;
-  right: 30px;
-  top: 60px;
-  text-align: right;
-  color: #fff; }
+  z-index: 1;
+  right: 24px;
+  top: 19px;
+  height: 50px;
+  width: 50px;
+  background: rgba(128, 128, 128, 0.9);
+  border-radius: 50%;
+  display: inline-block; }
 
 .heads-up {
   text-align: center; }
